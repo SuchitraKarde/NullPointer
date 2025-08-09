@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NullPointer/static/css/main.edd3428e.css",
+    "main.js": "/NullPointer/static/js/main.8e1d64ba.js",
+    "static/media/playful-music.mp3": "/NullPointer/static/media/playful-music.f556a7926ca24da7a2e6.mp3",
+    "static/media/wrong.mp3": "/NullPointer/static/media/wrong.43cbfd69591bf797c4e0.mp3",
+    "index.html": "/NullPointer/index.html",
+    "main.edd3428e.css.map": "/NullPointer/static/css/main.edd3428e.css.map",
+    "main.8e1d64ba.js.map": "/NullPointer/static/js/main.8e1d64ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edd3428e.css",
+    "static/js/main.8e1d64ba.js"
+  ]
+}
