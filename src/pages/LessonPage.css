@@ -1,0 +1,242 @@
+.lesson-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #cbf3f0, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.lesson-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2ec4b6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #003049;
+}
+
+.stats p {
+  background: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.option-btn {
+  background: #ffffff;
+  border: 2px solid #2ec4b6;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #003049;
+  font-weight: 500;
+}
+
+.option-btn:hover {
+  background: #2ec4b6;
+  color: white;
+  transform: scale(1.05);
+}
+
+.option-btn.selected {
+  background: #2ec4b6;
+  color: white;
+  box-shadow: 0 0 12px rgba(46, 196, 182, 0.6);
+}
+
+.feedback {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 15px 0;
+  height: 30px;
+  color: #003049;
+}
+
+.next-btn,
+.check-btn {
+  background: #ff9f1c;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s ease;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.next-btn:hover,
+.check-btn:hover {
+  background: #ffbf69;
+  transform: translateY(-2px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+ul li {
+  background: white;
+  margin: 5px auto;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 280px;
+  border: 2px solid #2ec4b6;
+  font-weight: 500;
+  color: #003049;
+  transition: 0.3s ease;
+}
+
+ul li:hover {
+  background: #cbf3f0;
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .lesson-container h2 {
+    font-size: 2rem;
+  }
+
+  .option-btn {
+    font-size: 0.95rem;
+  }
+
+  .stats {
+    gap: 15px;
+    font-size: 1rem;
+  }
+}
+
+.match-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.match-columns {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.match-item {
+  background: #ffffff;
+  border: 2px solid #2ec4b6;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  font-weight: 500;
+  cursor: grab;
+  transition: 0.2s ease;
+}
+
+.match-item:hover {
+  transform: scale(1.05);
+  background: #cbf3f0;
+}
+
+.match-item.matched {
+  background: #2ec4b6;
+  color: white;
+  cursor: not-allowed;
+}
+
+.match-dropzone {
+  background: #ffffff;
+  border: 2px dashed #ff9f1c;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  padding: 10px 15px;
+  transition: 0.2s ease;
+}
+
+.match-dropzone:hover {
+  background: #fff8e7;
+}
+.question-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.question-container:hover {
+  transform: scale(1.02);
+}
+
+.question-container h3 {
+  font-size: 1.6rem;
+  color: #2ec4b6;
+  margin-bottom: 20px;
+}
+
+.feedback {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #003049;
+  min-height: 25px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #cbf3f0;
+  border-radius: 6px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2ec4b6;
+  width: 0%;
+  transition: width 0.3s ease;
+}
